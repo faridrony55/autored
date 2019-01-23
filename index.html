@@ -1,0 +1,2110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/custom_css.css">
+
+    <title>Gráfica Autored</title>
+  </head>
+  <body> 
+
+    <div class="container-fluid py-4 ">
+      
+    <nav class="navbar navbar-expand-lg navbar-dark theme-dark">
+  <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo"></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">TRANSACCIONES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">CARTOLA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">COMPRAVENTAS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">STOCK</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">REPORTERÍA</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link yellow" href="#">INICIAR EVALUACIÓN</a>
+      </li> 
+      <li class="nav-item nav-icon d-none d-lg-block">
+        <a class="nav-link" href="#"><i class="fas fa-user-alt"></i></a>
+      </li> 
+      <li class="nav-item dropdown nav-icon d-none d-lg-block">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fas fa-bell"></i>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">notification</a>
+          <a class="dropdown-item" href="#">notification</a>
+          <a class="dropdown-item" href="#">notification</a> 
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Evaluador, Supervisor de Evaluadores
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+
+
+
+    </ul> 
+  </div>
+</nav>
+
+
+<div class="bg-secondary">
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <div class="dercocenter">
+        <img src="images/dercocenter.png" class="img-fluid " alt="dercocenter">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<div class="row ">
+<div class="container"> 
+
+  <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#one" role="tab" aria-controls="pills-home" aria-selected="true">Sin Enviar / En Peritaje (7)</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#two" role="tab" aria-controls="pills-profile" aria-selected="false">Solicitudes Abiertas (1)</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#three" role="tab" aria-controls="pills-contact" aria-selected="false">Carta de Toma (1)</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#four" role="tab" aria-controls="pills-profile" aria-selected="false">Históricas</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#five" role="tab" aria-controls="pills-contact" aria-selected="false">Peritaje Pendiente (0)</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#six" role="tab" aria-controls="pills-contact" aria-selected="false">Historial de Peritaje</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#seven" role="tab" aria-controls="pills-contact" aria-selected="false">Oportunidades</a>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <div class="tab-pane fade show active" id="one" role="tabpanel" aria-labelledby="pills-home-tab">
+     
+     <!-- ******************** -->
+     <div class="row justify-content-between py-5">
+       <div class="col-md-4">
+         <div class="title">
+           <h2>SIN ENVIAR/ EN PERITAJE</h2>
+           <span>HAY 7 TRANSACCIONES</span>
+         </div>
+       </div>
+       <div class="col-md-7">
+
+        <form class="form-row no-gutter download-link justify-content-end">
+          <div class="form-group   col-auto">
+          <button type="submit" class="btn    btn-custom">DESCARGAR EN EXCEL</button>
+        </div>
+          <div class="form-group  col-7 input-group yellow">
+          <div class="input-group-prepend">
+      <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
+    </div> 
+            <select class="form-control">
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+           </select>
+          </div>
+           
+        </form>
+ 
+       </div>
+     </div>
+
+     <div class="row justify-content-between pb-3">
+       <div class="col-md-4">
+          <div class="list-item">
+            <ul class="nav">
+              <li class="nav-item"><p>Resultados por página</p></li>
+              <li class="nav-item">
+                <select class="form-control">
+                  <option value="30">30</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+       </div>
+       <div class="col-md-4 list-item">
+            
+         <ul class="nav justify-content-end">
+
+           <li class="nav-item">
+            <p>Página 1 de 3</p>
+          </li>
+           <li class="nav-item">
+             <ul class="nav pagination">
+               <li class="nav-item">
+                <span><</span>
+               </li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 3
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item">
+                <span>></span>
+               </li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered  table-hover table-sm table-responsive">
+          <tr>
+            <th>ESTADO</th>
+            <th>FECHA CREACIÓN</th>
+            <th>MARCA</th>
+            <th>MARCA</th>
+            <th>AÑO</th>
+            <th>KM</th>
+            <th>PATENTE</th>
+            <th>VENDEDOR</th>
+            <th>SUCURSAL</th>
+            <th>EVALUADOR</th>
+            <th>PROPUESTA</th>
+            <th>TIEMPO RESTANTE</th>
+            <th>EXTRA</th>
+            <th>ACCIONES</th>
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+           
+        </table>
+
+        <hr>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+        
+              <ul class="nav justify-content-end footer-icon">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i> Imagen adjunta</a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i> Carta de toma emitida</a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i> Archivo adjunto</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-calendar-alt"></i> En proceso de peritaje</a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span> Peritaje completado</a></li>
+              </ul> 
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+
+             <ul class="nav pagination align-items-center justify-content-center pt-5">
+               <li class="nav-item"><span><i class="fas fa-step-backward"></i></span></li>
+               <li class="nav-item"><span><</span></li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>1</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>2</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>3</span>
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item"><span>></span></li>
+               <li class="nav-item"><span><i class="fas fa-step-forward"></i></span></li>
+             </ul>
+      </div>
+    </div>
+     <!-- ******************** -->
+
+  </div> 
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <div class="tab-pane fade show active" id="two" role="tabpanel" aria-labelledby="pills-home-tab">
+     
+     <!-- ******************** -->
+     <div class="row justify-content-between py-5">
+       <div class="col-md-4">
+         <div class="title">
+           <h2>SIN ENVIAR/ EN PERITAJE</h2>
+           <span>HAY 7 TRANSACCIONES</span>
+         </div>
+       </div>
+       <div class="col-md-7">
+
+        <form class="form-row no-gutter download-link justify-content-end">
+          <div class="form-group   col-auto">
+          <button type="submit" class="btn    btn-custom">DESCARGAR EN EXCEL</button>
+        </div>
+          <div class="form-group  col-7 input-group yellow">
+          <div class="input-group-prepend">
+      <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
+    </div> 
+            <select class="form-control">
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+           </select>
+          </div>
+           
+        </form>
+ 
+       </div>
+     </div>
+
+     <div class="row justify-content-between pb-3">
+       <div class="col-md-4">
+          <div class="list-item">
+            <ul class="nav">
+              <li class="nav-item"><p>Resultados por página</p></li>
+              <li class="nav-item">
+                <select class="form-control">
+                  <option value="30">30</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+       </div>
+       <div class="col-md-4 list-item">
+            
+         <ul class="nav justify-content-end">
+
+           <li class="nav-item">
+            <p>Página 1 de 3</p>
+          </li>
+           <li class="nav-item">
+             <ul class="nav pagination">
+               <li class="nav-item">
+                <span><</span>
+               </li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 3
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item">
+                <span>></span>
+               </li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered  table-hover table-sm table-responsive">
+          <tr>
+            <th>ESTADO</th>
+            <th>FECHA CREACIÓN</th>
+            <th>MARCA</th>
+            <th>MARCA</th>
+            <th>AÑO</th>
+            <th>KM</th>
+            <th>PATENTE</th>
+            <th>VENDEDOR</th>
+            <th>SUCURSAL</th>
+            <th>EVALUADOR</th>
+            <th>PROPUESTA</th>
+            <th>TIEMPO RESTANTE</th>
+            <th>EXTRA</th>
+            <th>ACCIONES</th>
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+           
+        </table>
+
+        <hr>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+        
+              <ul class="nav justify-content-end footer-icon">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i> Imagen adjunta</a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i> Carta de toma emitida</a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i> Archivo adjunto</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-calendar-alt"></i> En proceso de peritaje</a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span> Peritaje completado</a></li>
+              </ul> 
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+
+             <ul class="nav pagination align-items-center justify-content-center pt-5">
+               <li class="nav-item"><span><i class="fas fa-step-backward"></i></span></li>
+               <li class="nav-item"><span><</span></li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>1</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>2</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>3</span>
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item"><span>></span></li>
+               <li class="nav-item"><span><i class="fas fa-step-forward"></i></span></li>
+             </ul>
+      </div>
+    </div>
+     <!-- ******************** -->
+
+  </div> 
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+ 
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <div class="tab-pane fade show active" id="three" role="tabpanel" aria-labelledby="pills-home-tab">
+     
+     <!-- ******************** -->
+     <div class="row justify-content-between py-5">
+       <div class="col-md-4">
+         <div class="title">
+           <h2>SIN ENVIAR/ EN PERITAJE</h2>
+           <span>HAY 7 TRANSACCIONES</span>
+         </div>
+       </div>
+       <div class="col-md-7">
+
+        <form class="form-row no-gutter download-link justify-content-end">
+          <div class="form-group   col-auto">
+          <button type="submit" class="btn    btn-custom">DESCARGAR EN EXCEL</button>
+        </div>
+          <div class="form-group  col-7 input-group yellow">
+          <div class="input-group-prepend">
+      <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
+    </div> 
+            <select class="form-control">
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+           </select>
+          </div>
+           
+        </form>
+ 
+       </div>
+     </div>
+
+     <div class="row justify-content-between pb-3">
+       <div class="col-md-4">
+          <div class="list-item">
+            <ul class="nav">
+              <li class="nav-item"><p>Resultados por página</p></li>
+              <li class="nav-item">
+                <select class="form-control">
+                  <option value="30">30</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+       </div>
+       <div class="col-md-4 list-item">
+            
+         <ul class="nav justify-content-end">
+
+           <li class="nav-item">
+            <p>Página 1 de 3</p>
+          </li>
+           <li class="nav-item">
+             <ul class="nav pagination">
+               <li class="nav-item">
+                <span><</span>
+               </li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 3
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item">
+                <span>></span>
+               </li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered  table-hover table-sm table-responsive">
+          <tr>
+            <th>ESTADO</th>
+            <th>FECHA CREACIÓN</th>
+            <th>MARCA</th>
+            <th>MARCA</th>
+            <th>AÑO</th>
+            <th>KM</th>
+            <th>PATENTE</th>
+            <th>VENDEDOR</th>
+            <th>SUCURSAL</th>
+            <th>EVALUADOR</th>
+            <th>PROPUESTA</th>
+            <th>TIEMPO RESTANTE</th>
+            <th>EXTRA</th>
+            <th>ACCIONES</th>
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+           
+        </table>
+
+        <hr>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+        
+              <ul class="nav justify-content-end footer-icon">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i> Imagen adjunta</a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i> Carta de toma emitida</a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i> Archivo adjunto</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-calendar-alt"></i> En proceso de peritaje</a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span> Peritaje completado</a></li>
+              </ul> 
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+
+             <ul class="nav pagination align-items-center justify-content-center pt-5">
+               <li class="nav-item"><span><i class="fas fa-step-backward"></i></span></li>
+               <li class="nav-item"><span><</span></li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>1</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>2</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>3</span>
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item"><span>></span></li>
+               <li class="nav-item"><span><i class="fas fa-step-forward"></i></span></li>
+             </ul>
+      </div>
+    </div>
+     <!-- ******************** -->
+
+  </div> 
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <div class="tab-pane fade show active" id="four" role="tabpanel" aria-labelledby="pills-home-tab">
+     
+     <!-- ******************** -->
+     <div class="row justify-content-between py-5">
+       <div class="col-md-4">
+         <div class="title">
+           <h2>SIN ENVIAR/ EN PERITAJE</h2>
+           <span>HAY 7 TRANSACCIONES</span>
+         </div>
+       </div>
+       <div class="col-md-7">
+
+        <form class="form-row no-gutter download-link justify-content-end">
+          <div class="form-group   col-auto">
+          <button type="submit" class="btn    btn-custom">DESCARGAR EN EXCEL</button>
+        </div>
+          <div class="form-group  col-7 input-group yellow">
+          <div class="input-group-prepend">
+      <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
+    </div> 
+            <select class="form-control">
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+           </select>
+          </div>
+           
+        </form>
+ 
+       </div>
+     </div>
+
+     <div class="row justify-content-between pb-3">
+       <div class="col-md-4">
+          <div class="list-item">
+            <ul class="nav">
+              <li class="nav-item"><p>Resultados por página</p></li>
+              <li class="nav-item">
+                <select class="form-control">
+                  <option value="30">30</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+       </div>
+       <div class="col-md-4 list-item">
+            
+         <ul class="nav justify-content-end">
+
+           <li class="nav-item">
+            <p>Página 1 de 3</p>
+          </li>
+           <li class="nav-item">
+             <ul class="nav pagination">
+               <li class="nav-item">
+                <span><</span>
+               </li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 3
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item">
+                <span>></span>
+               </li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered  table-hover table-sm table-responsive">
+          <tr>
+            <th>ESTADO</th>
+            <th>FECHA CREACIÓN</th>
+            <th>MARCA</th>
+            <th>MARCA</th>
+            <th>AÑO</th>
+            <th>KM</th>
+            <th>PATENTE</th>
+            <th>VENDEDOR</th>
+            <th>SUCURSAL</th>
+            <th>EVALUADOR</th>
+            <th>PROPUESTA</th>
+            <th>TIEMPO RESTANTE</th>
+            <th>EXTRA</th>
+            <th>ACCIONES</th>
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+           
+        </table>
+
+        <hr>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+        
+              <ul class="nav justify-content-end footer-icon">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i> Imagen adjunta</a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i> Carta de toma emitida</a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i> Archivo adjunto</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-calendar-alt"></i> En proceso de peritaje</a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span> Peritaje completado</a></li>
+              </ul> 
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+
+             <ul class="nav pagination align-items-center justify-content-center pt-5">
+               <li class="nav-item"><span><i class="fas fa-step-backward"></i></span></li>
+               <li class="nav-item"><span><</span></li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>1</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>2</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>3</span>
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item"><span>></span></li>
+               <li class="nav-item"><span><i class="fas fa-step-forward"></i></span></li>
+             </ul>
+      </div>
+    </div>
+     <!-- ******************** -->
+
+  </div> 
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <div class="tab-pane fade show active" id="five" role="tabpanel" aria-labelledby="pills-home-tab">
+     
+     <!-- ******************** -->
+     <div class="row justify-content-between py-5">
+       <div class="col-md-4">
+         <div class="title">
+           <h2>SIN ENVIAR/ EN PERITAJE</h2>
+           <span>HAY 7 TRANSACCIONES</span>
+         </div>
+       </div>
+       <div class="col-md-7">
+
+        <form class="form-row no-gutter download-link justify-content-end">
+          <div class="form-group   col-auto">
+          <button type="submit" class="btn    btn-custom">DESCARGAR EN EXCEL</button>
+        </div>
+          <div class="form-group  col-7 input-group yellow">
+          <div class="input-group-prepend">
+      <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
+    </div> 
+            <select class="form-control">
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+           </select>
+          </div>
+           
+        </form>
+ 
+       </div>
+     </div>
+
+     <div class="row justify-content-between pb-3">
+       <div class="col-md-4">
+          <div class="list-item">
+            <ul class="nav">
+              <li class="nav-item"><p>Resultados por página</p></li>
+              <li class="nav-item">
+                <select class="form-control">
+                  <option value="30">30</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+       </div>
+       <div class="col-md-4 list-item">
+            
+         <ul class="nav justify-content-end">
+
+           <li class="nav-item">
+            <p>Página 1 de 3</p>
+          </li>
+           <li class="nav-item">
+             <ul class="nav pagination">
+               <li class="nav-item">
+                <span><</span>
+               </li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 3
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item">
+                <span>></span>
+               </li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered  table-hover table-sm table-responsive">
+          <tr>
+            <th>ESTADO</th>
+            <th>FECHA CREACIÓN</th>
+            <th>MARCA</th>
+            <th>MARCA</th>
+            <th>AÑO</th>
+            <th>KM</th>
+            <th>PATENTE</th>
+            <th>VENDEDOR</th>
+            <th>SUCURSAL</th>
+            <th>EVALUADOR</th>
+            <th>PROPUESTA</th>
+            <th>TIEMPO RESTANTE</th>
+            <th>EXTRA</th>
+            <th>ACCIONES</th>
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+           
+        </table>
+
+        <hr>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+        
+              <ul class="nav justify-content-end footer-icon">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i> Imagen adjunta</a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i> Carta de toma emitida</a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i> Archivo adjunto</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-calendar-alt"></i> En proceso de peritaje</a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span> Peritaje completado</a></li>
+              </ul> 
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+
+             <ul class="nav pagination align-items-center justify-content-center pt-5">
+               <li class="nav-item"><span><i class="fas fa-step-backward"></i></span></li>
+               <li class="nav-item"><span><</span></li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>1</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>2</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>3</span>
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item"><span>></span></li>
+               <li class="nav-item"><span><i class="fas fa-step-forward"></i></span></li>
+             </ul>
+      </div>
+    </div>
+     <!-- ******************** -->
+
+  </div> 
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <div class="tab-pane fade show active" id="six" role="tabpanel" aria-labelledby="pills-home-tab">
+     
+     <!-- ******************** -->
+     <div class="row justify-content-between py-5">
+       <div class="col-md-4">
+         <div class="title">
+           <h2>SIN ENVIAR/ EN PERITAJE</h2>
+           <span>HAY 7 TRANSACCIONES</span>
+         </div>
+       </div>
+       <div class="col-md-7">
+
+        <form class="form-row no-gutter download-link justify-content-end">
+          <div class="form-group   col-auto">
+          <button type="submit" class="btn    btn-custom">DESCARGAR EN EXCEL</button>
+        </div>
+          <div class="form-group  col-7 input-group yellow">
+          <div class="input-group-prepend">
+      <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
+    </div> 
+            <select class="form-control">
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+           </select>
+          </div>
+           
+        </form>
+ 
+       </div>
+     </div>
+
+     <div class="row justify-content-between pb-3">
+       <div class="col-md-4">
+          <div class="list-item">
+            <ul class="nav">
+              <li class="nav-item"><p>Resultados por página</p></li>
+              <li class="nav-item">
+                <select class="form-control">
+                  <option value="30">30</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+       </div>
+       <div class="col-md-4 list-item">
+            
+         <ul class="nav justify-content-end">
+
+           <li class="nav-item">
+            <p>Página 1 de 3</p>
+          </li>
+           <li class="nav-item">
+             <ul class="nav pagination">
+               <li class="nav-item">
+                <span><</span>
+               </li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 3
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item">
+                <span>></span>
+               </li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered  table-hover table-sm table-responsive">
+          <tr>
+            <th>ESTADO</th>
+            <th>FECHA CREACIÓN</th>
+            <th>MARCA</th>
+            <th>MARCA</th>
+            <th>AÑO</th>
+            <th>KM</th>
+            <th>PATENTE</th>
+            <th>VENDEDOR</th>
+            <th>SUCURSAL</th>
+            <th>EVALUADOR</th>
+            <th>PROPUESTA</th>
+            <th>TIEMPO RESTANTE</th>
+            <th>EXTRA</th>
+            <th>ACCIONES</th>
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+           
+        </table>
+
+        <hr>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+        
+              <ul class="nav justify-content-end footer-icon">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i> Imagen adjunta</a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i> Carta de toma emitida</a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i> Archivo adjunto</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-calendar-alt"></i> En proceso de peritaje</a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span> Peritaje completado</a></li>
+              </ul> 
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+
+             <ul class="nav pagination align-items-center justify-content-center pt-5">
+               <li class="nav-item"><span><i class="fas fa-step-backward"></i></span></li>
+               <li class="nav-item"><span><</span></li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>1</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>2</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>3</span>
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item"><span>></span></li>
+               <li class="nav-item"><span><i class="fas fa-step-forward"></i></span></li>
+             </ul>
+      </div>
+    </div>
+     <!-- ******************** -->
+
+  </div> 
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+  <div class="tab-pane fade show " id="seven" role="tabpanel" aria-labelledby="pills-home-tab">
+     
+     <!-- ******************** -->
+     <div class="row justify-content-between py-5">
+       <div class="col-md-4">
+         <div class="title">
+           <h2>SIN ENVIAR/ EN PERITAJE</h2>
+           <span>HAY 7 TRANSACCIONES</span>
+         </div>
+       </div>
+       <div class="col-md-7">
+
+        <form class="form-row no-gutter download-link justify-content-end">
+          <div class="form-group   col-auto">
+          <button type="submit" class="btn    btn-custom">DESCARGAR EN EXCEL</button>
+        </div>
+          <div class="form-group  col-7 input-group yellow">
+          <div class="input-group-prepend">
+      <button type="submit" class="input-group-text"><i class="fas fa-search"></i></button>
+    </div> 
+            <select class="form-control">
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+             <option value="">buscar</option>
+           </select>
+          </div>
+           
+        </form>
+ 
+       </div>
+     </div>
+
+     <div class="row justify-content-between pb-3">
+       <div class="col-md-4">
+          <div class="list-item">
+            <ul class="nav">
+              <li class="nav-item"><p>Resultados por página</p></li>
+              <li class="nav-item">
+                <select class="form-control">
+                  <option value="30">30</option>
+                  <option value="50">50</option>
+                  <option value="100">100</option>
+                </select>
+              </li>
+            </ul>
+          </div>
+       </div>
+       <div class="col-md-4 list-item">
+            
+         <ul class="nav justify-content-end">
+
+           <li class="nav-item">
+            <p>Página 1 de 3</p>
+          </li>
+           <li class="nav-item">
+             <ul class="nav pagination">
+               <li class="nav-item">
+                <span><</span>
+               </li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 1
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 2
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> 3
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item">
+                <span>></span>
+               </li>
+             </ul>
+           </li>
+         </ul>
+       </div>
+
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <table class="table table-bordered  table-hover table-sm table-responsive">
+          <tr>
+            <th>ESTADO</th>
+            <th>FECHA CREACIÓN</th>
+            <th>MARCA</th>
+            <th>MARCA</th>
+            <th>AÑO</th>
+            <th>KM</th>
+            <th>PATENTE</th>
+            <th>VENDEDOR</th>
+            <th>SUCURSAL</th>
+            <th>EVALUADOR</th>
+            <th>PROPUESTA</th>
+            <th>TIEMPO RESTANTE</th>
+            <th>EXTRA</th>
+            <th>ACCIONES</th>
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>En evaluación</td>
+            <td>18/12/2016<br> 15:00 hrs.</td>
+            <td>Mazda</td>
+            <td>CX-5</td>
+            <td>2015</td>
+            <td>35000</td>
+            <td>TTTT45</td>
+            <td>Pedro Gómez</td>
+            <td>Autored Capacitación</td>
+            <td>CristiánIturrieta</td>
+            <td>$3.125.000</td>
+            <td><span>00:29:20</span></td>
+            <td>
+              <ul class="nav ">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li> 
+              </ul>
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+          <tr>
+            <td>Aceptada</td>
+            <td>18/12/2016 <br> 15:00 hrs.</td>
+            <td>KIA Motors</td>
+            <td>MORNING</td>
+            <td>2012</td>
+            <td>68140</td>
+            <td>DOKJ62</td>
+            <td>Cecilia Sanino</td>
+            <td>Autored Capacitación</td>
+            <td>Cristián Iturrieta</td>
+            <td>$3.125.000</td>
+            <td>Subasta terminada</td>
+            <td>
+              <ul class="nav">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i></a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i></a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i></a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span></a></li>
+              </ul> 
+            </td>
+            <td><b><a href="#">Ver Detalle</a></b></td> 
+          </tr>
+           
+        </table>
+
+        <hr>
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+        
+              <ul class="nav justify-content-end footer-icon">
+                <li class="nav-item"><a href="#"><i class="fas fa-camera"></i> Imagen adjunta</a> </li>
+                <li class="nav-item"><a href="#"><i class="fas fa-link"></i> Carta de toma emitida</a></li>
+                <li class="nav-item"><a href="#"><i class="fab fa-cuttlefish"></i> Archivo adjunto</a></li>
+                <li class="nav-item"><a href="#"><i class="fas fa-calendar-alt"></i> En proceso de peritaje</a></li>
+                <li class="nav-item"><a href="#"><span><i class="fas fa-calendar-alt"></i></span> Peritaje completado</a></li>
+              </ul> 
+      </div>
+    </div>
+
+    <div class="row ">
+      <div class="col">
+
+             <ul class="nav pagination align-items-center justify-content-center pt-5">
+               <li class="nav-item"><span><i class="fas fa-step-backward"></i></span></li>
+               <li class="nav-item"><span><</span></li>
+               <li class="nav-item ">
+                 <div class="btn-group btn-group-toggle" data-toggle="buttons"> 
+              <label class="btn btn-outline-secondary active">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>1</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>2</span>
+              </label>
+              <label class="btn btn-outline-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> <span>3</span>
+              </label> 
+            </div>
+               </li>
+
+               <li class="nav-item"><span>></span></li>
+               <li class="nav-item"><span><i class="fas fa-step-forward"></i></span></li>
+             </ul>
+      </div>
+    </div>
+     <!-- ******************** -->
+
+  </div> 
+  <!-- +++++++++++++++++++++++++++++++++++++ -->
+</div>
+</div>
+</div>
+
+
+<footer>
+  
+</footer>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  </body>
+</html>
